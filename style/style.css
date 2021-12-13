@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.weather-container {
+  width: 100%;
+  height: 18vh;
+}
+
+.weather-container .weather-card {
+  width: 300px;
+  height: 140px;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.weather-container .info-weather {
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.weather-container .info-weather .timezone {
+  margin: 0 2rem;
+}
+
+.weather-container .temperature {
+  height: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 40px;
+}
+
+.weather-container .temperature .info-degree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.weather-container .temperature .info-degree .degree {
+  margin-right: 0.3rem;
+}
+
+.weather-container #wicon {
+  margin-left: 2rem;
+}
+
+.todo-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-list-container #logo {
+  font-family: "Abril Fatface", cursive;
+  color: white;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.todo-list-container .input {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.todo-list-container .input button,
+.todo-list-container .input input {
+  padding: 0.6rem;
+  border: none;
+  font-size: 1.2rem;
+  background: white;
+}
+
+.todo-list-container .input input {
+  width: 340px;
+}
+
+.todo-list-container .input button {
+  padding: 0.52rem;
+  cursor: pointer;
+  color: #eda6b1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.todo-list-container .input button:hover {
+  color: white;
+  background: #eda6b1;
+}
+
+.todo-container .todo-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  min-width: 370px;
+  min-height: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.todo-container .todo-div:not(:first-child) {
+  margin: 1rem 0rem;
+}
+
+.todo-container .todo-div li {
+  margin-top: 2px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+}
+
+.todo-container .todo-div button {
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.todo-container .todo-div li,
+.todo-container .todo-div button {
+  padding: 0rem 1rem;
+}
+
+.todo-container .todo-div .complete-btn {
+  background: #db9ba6;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.todo-container .todo-div .delete-btn {
+  background: #40545e;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.todo-container .completed {
+  opacity: 50%;
+}
+
+.todo-container .fly-right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+}
+
+.todo-container .fly-left {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+}
+
+.music-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 80px;
+  top: 100px;
+  right: 130px;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.music-container .img-container {
+  width: 90px;
+  position: relative;
+}
+
+.music-container .img-container::after {
+  content: "";
+  background: rgba(255, 255, 255, 0.7);
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.music-container img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  -webkit-animation: rotate 3s linear infinite;
+          animation: rotate 3s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.music-container.play img {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.navigation .action-btn {
+  border: 0;
+  background: none;
+  opacity: 30%;
+  margin: 0 15px 0 35px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navigation .action-btn-big {
+  opacity: 50%;
+  font-size: 1.5rem;
+}
+
+.music-info {
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem 1rem 0 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  opacity: 0;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  padding: 10px 10px 10px 100px;
+  -webkit-transition: opacity 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  transition: opacity 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.music-info .progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.music-info .progress {
+  background-color: #db9ba6;
+  height: 4px;
+  width: 0%;
+  -webkit-transition: width 0.1s linear;
+  transition: width 0.1s linear;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+/*# sourceMappingURL=style.css.map */

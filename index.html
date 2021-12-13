@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script defer src="./script.js"></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <!-- WEATHER CARD START-->
+    <div class="weather-container">
+      <div class="weather-card">
+        <div class="info-weather">
+          <h1 class="timezone">Load</h1>
+          <img id="wicon" src="" alt="Weather icon" />
+        </div>
+        <div class="temperature">
+          <div class="info-degree">
+            <h2 class="degree">Load</h2>
+            <h2>°C</h2>
+          </div>
+          <h2 class="description">Load</h2>
+        </div>
+      </div>
+    </div>
+    <!-- WEATHER CARD END-->
+    <!-- TODO list START -->
+    <div class="todo-list-container">
+      <h1 id="logo">Todo List</h1>
+      <div class="input">
+        <input type="text" name="input" id="input-text" />
+        <button class="Add">&#10010;</button>
+      </div>
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+    </div>
+    <!-- TODO list END -->
+    <!-- Music player START -->
+    <div class="music-container">
+      <div class="music-info">
+        <h4 id="title">Ukulele</h4>
+        <div class="progress-container">
+          <div class="progress"></div>
+        </div>
+      </div>
+
+      <audio src="./music/Break.mp3" id="audio"></audio>
+
+      <div class="img-container">
+        <img src="./img/Break.jpg" alt="music-cover" id="cover" />
+      </div>
+
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Music player END -->
+  </body>
+</html>
